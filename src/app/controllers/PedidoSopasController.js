@@ -31,10 +31,10 @@ class PedidoSopasController {
             sopasArray[i] = sopasArray[i].toUpperCase()
         }
 
-        let Sopas = ""
+        let sopasstring = ""
         sopasArray.forEach(element => {
             if (Sopas.indexOf(element) != -1) {
-                Sopas += element;
+                sopasstring += element;
                 
             } 
         });
@@ -46,7 +46,7 @@ class PedidoSopasController {
         const value = qt < 3 ? qt * 11 : qt * 10
 
         const pedido = await PedidosSopas.create({
-            sopas,
+            sopas: sopasstring,
             value,
             pagamento,
             rua,
