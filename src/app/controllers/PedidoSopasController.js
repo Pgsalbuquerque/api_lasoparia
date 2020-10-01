@@ -31,14 +31,17 @@ class PedidoSopasController {
             sopasArray[i] = sopasArray[i].toUpperCase()
         }
 
-        console.log(sopasArray)
+        let Sopas = ""
         sopasArray.forEach(element => {
-            if (Sopas.indexOf(element) == -1) {
-                console.log(element)
-                return res.sendStatus(400);
+            if (Sopas.indexOf(element) != -1) {
+                Sopas += element;
                 
             } 
         });
+
+        if (Sopas == "") {
+            return res.sendStatus(400)
+        }
 
         const value = qt < 3 ? qt * 11 : qt * 10
 
