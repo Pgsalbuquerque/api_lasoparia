@@ -1,0 +1,1 @@
+export default ["FEIJÃO", "MACAXEIRA", "LEGUMES", "CALDO VERDE", "MILHO", "FRANGO", "CARNE", "PEIXE"];
