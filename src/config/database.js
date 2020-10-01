@@ -1,9 +1,9 @@
 module.exports = {
     dialect: 'mysql',
-    host: 'localhost',
-    username: 'root',
-    password: '9932',
-    database: 'bd_lasoparia',
+    host: 'us-cdbr-east-02.cleardb.com',
+    username: 'bf21245529b332',
+    password: 'fea765e8',
+    database: 'heroku_d243cd783b0fe6e',
     define: {
         timestamps: true,
         underscored: true,
@@ -13,7 +13,7 @@ module.exports = {
         useUTC: false,
         dateStrings: true,
         typeCast: true,
-        timezone: "-03:00"
+        timezone: "-03:00"  
       },
     timezone: "-03:00"
 };
